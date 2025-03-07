@@ -1,1 +1,24 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File List</title>
+</head>
+<body>
+    <h1>Available HTML Files</h1>
+    <ul>
+        <script>
+            const files = [
+                "file1.html",
+                "file2.html",
+                "subfolder/file3.html"
+            ]; // Replace with your actual files
+
+            files.forEach(file => {
+                document.write(`<li><a href="${file}">${file}</a></li>`);
+            });
+        </script>
+    </ul>
+</body>
+</html>
